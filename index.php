@@ -20,11 +20,11 @@
         </div>
 
         <div id="sideNavContainer">
-            hey
+
         </div>
 
         <div id="mainSectionContainer">
-            hey
+
         </div>
 
     </div>
