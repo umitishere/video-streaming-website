@@ -1,4 +1,6 @@
-<?php require_once "external/externalVariables.php" ?>
+<?php
+    $fontAwesomeKey = getenv("FONTAWESOME_KEY"); // Trying to learn how to use env values
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +19,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/05e9384002.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/<?php echo $fontAwesomeKey; ?>.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
