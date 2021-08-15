@@ -1,5 +1,5 @@
 <?php
-    $fontAwesomeKey = getenv("FONTAWESOME_KEY"); // Trying to learn how to use env values
+    require_once("includes/config.php");
 ?>
 
 <!DOCTYPE html>
