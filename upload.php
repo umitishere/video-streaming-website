@@ -7,7 +7,6 @@
     <?php
         $formProvider = new VideoDetailsFormProvider($con);
         echo $formProvider->createUploadForm();
-
     ?>
 </div>
 
