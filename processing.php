@@ -8,12 +8,19 @@
         exit();
     }
 
-    $VideoUploadData = new VideoUploadData(
-        $_POST["fileInput"],
+    // Create file upload data
+    $videoUploadData = new VideoUploadData(
+        $_FILES["fileInput"],
         $_POST["titleInput"],
         $_POST["descriptionInput"],
         $_POST["privacyInput"],
         $_POST["categoryInput"],
         "REPLACE_THIS"
     );
+
+    // Process video data (upload)
+    $videoProcessor = new VideoProcessor($con);
+    $wasSuccessful = $videoProcessor->upload($videoUploadData);
+
+    // Check if upload was successful
 ?>

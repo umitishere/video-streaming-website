@@ -5,7 +5,7 @@
 
 <div class="column">
     <?php
-        $formProvider = new VideoDetailsFormProvider($con);
+        $formProvider = new VideoDetailsFormProvider($con); // $con variable comes from config.php>header.php
         echo $formProvider->createUploadForm();
     ?>
 </div>
